@@ -1,4 +1,4 @@
-
+<div>
 <div class="card offset-3 col-6">
  <div class="card-header">
     Counter App
@@ -13,4 +13,8 @@
     <button wire:click="increment" class="btn btn-primary">Incrementing</button>
     <button wire:click="decrement" class="btn btn-secondary">Decrementing</button>
  </div>
+ 
 </div>
+<livewire:create-user/>
+</div>
+

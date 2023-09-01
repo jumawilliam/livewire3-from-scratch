@@ -10,7 +10,7 @@ class Counter extends Component
     public $limit=5;
     public function render()
     {
-        return view('livewire.counter');
+        return view('livewire.counter')->layoutData(['title'=>'my awesome title']);
     }
 
     public function increment(){
