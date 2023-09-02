@@ -15,6 +15,6 @@
  </div>
  
 </div>
-<livewire:create-user/>
+
 </div>
 
