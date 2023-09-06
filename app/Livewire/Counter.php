@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+//use Livewire\Attributes\Title;
 use Livewire\Component;
 
 class Counter extends Component
@@ -10,9 +11,17 @@ class Counter extends Component
 
     public $limit = 5;
 
+    //#[Title('My Awesome Title')]
     public function render()
     {
-        return view('livewire.counter');
+        return view('livewire.counter')
+            ->layoutData([
+                'metaKeys' => 'key1,key2,key3',
+                'metaDescription' => 'Some description',
+                'metaAuthor' => 'somebodys name',
+
+            ]);
+
     }
 
     public function increment()
