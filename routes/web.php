@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Counter;
 use App\Livewire\Registeruser;
+use App\Livewire\DropDown;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,3 +21,4 @@ Route::get('/', function () {
 
 Route::get('/counter/',Counter::class);
 Route::get('/register',Registeruser::class);
+Route::get('/dropdown',DropDown::class);
