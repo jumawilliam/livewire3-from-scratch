@@ -8,6 +8,7 @@
         <title>{{ $title ?? 'Page Title' }}</title>
     </head>
     <body>
+        <livewire:nav-bar/>
         <div class="container">
         {{ $slot }}
         </div>
