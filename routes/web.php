@@ -5,6 +5,7 @@ use App\Livewire\Counter;
 use App\Livewire\Registeruser;
 use App\Livewire\DropDown;
 use App\Livewire\FileUpload;
+use App\Livewire\AllUsers;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,3 +25,4 @@ Route::get('/counter/',Counter::class);
 Route::get('/register',Registeruser::class);
 Route::get('/dropdown',DropDown::class);
 Route::get('/fileupload',FileUpload::class);
+Route::get('/users',AllUsers::class);
