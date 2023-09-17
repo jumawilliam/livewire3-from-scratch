@@ -2,8 +2,8 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">{{$formtitle}}</h1>
+          <button wire:click="close" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             @if(session('status'))
@@ -37,8 +37,13 @@
               </form>
         </div>
         <div class="modal-footer">
+          @if($editform)
           <button wire:click="close" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button wire:click="save" type="button" class="btn btn-primary">Save changes</button>
+          <button wire:click="update" type="button" class="btn btn-primary">update</button>
+          @else
+          <button wire:click="close" type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button wire:click="save" type="button" class="btn btn-primary">Save changes</button>   
+          @endif
         </div>
       </div>
     </div>
