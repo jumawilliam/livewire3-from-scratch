@@ -7,6 +7,7 @@ use App\Livewire\DropDown;
 use App\Livewire\FileUpload;
 use App\Livewire\AllUsers;
 use App\Livewire\AllProducts;
+use App\Livewire\Polling;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,4 +30,5 @@ Route::get('/dropdown',DropDown::class);
 Route::get('/fileupload',FileUpload::class);
 Route::get('/users',AllUsers::class);
 Route::get('/products',AllProducts::class);
+Route::get('/poll',Polling::class);
 
