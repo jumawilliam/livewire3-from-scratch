@@ -8,6 +8,8 @@ use App\Livewire\FileUpload;
 use App\Livewire\AllUsers;
 use App\Livewire\AllProducts;
 use App\Livewire\Polling;
+use App\Livewire\LoadingExample;
+use App\Livewire\Calculator;
 
 /*
 |--------------------------------------------------------------------------
@@ -31,4 +33,6 @@ Route::get('/fileupload',FileUpload::class);
 Route::get('/users',AllUsers::class);
 Route::get('/products',AllProducts::class);
 Route::get('/poll',Polling::class);
+Route::get('/loading',LoadingExample::class);
+Route::get('/calculator',Calculator::class);
 
