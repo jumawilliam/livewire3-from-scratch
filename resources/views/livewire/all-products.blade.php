@@ -29,3 +29,18 @@
       </table>
       <livewire:create-product>
 </div>
+
+<script>
+  document.addEventListener('livewire:initialized',()=>{
+    @this.on('refresh-products',(event)=>{
+      //alert('product created/updated')
+      var myModalEl=document.querySelector('#exampleModal')
+      var modal=bootstrap.Modal.getOrCreateInstance(myModalEl)
+      
+      setTimeout(() => {
+        modal.hide();
+        @this.dispatch('reset-modal');
+      }, 5000);
+    })
+  })
+</script>
