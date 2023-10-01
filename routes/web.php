@@ -10,6 +10,7 @@ use App\Livewire\AllProducts;
 use App\Livewire\Polling;
 use App\Livewire\LoadingExample;
 use App\Livewire\Calculator;
+use App\Livewire\AllPosts;
 
 /*
 |--------------------------------------------------------------------------
@@ -35,4 +36,5 @@ Route::get('/products',AllProducts::class);
 Route::get('/poll',Polling::class);
 Route::get('/loading',LoadingExample::class);
 Route::get('/calculator',Calculator::class);
+Route::get('/posts',AllPosts::class);
 
