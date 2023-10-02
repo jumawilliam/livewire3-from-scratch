@@ -11,6 +11,7 @@ use App\Livewire\Polling;
 use App\Livewire\LoadingExample;
 use App\Livewire\Calculator;
 use App\Livewire\AllPosts;
+use App\Livewire\CreatePost;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,4 +38,5 @@ Route::get('/poll',Polling::class);
 Route::get('/loading',LoadingExample::class);
 Route::get('/calculator',Calculator::class);
 Route::get('/posts',AllPosts::class);
+Route::get('/posts/create',CreatePost::class);
 
