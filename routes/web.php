@@ -12,6 +12,7 @@ use App\Livewire\LoadingExample;
 use App\Livewire\Calculator;
 use App\Livewire\AllPosts;
 use App\Livewire\CreatePost;
+use App\Livewire\MultiStep;
 
 /*
 |--------------------------------------------------------------------------
@@ -39,4 +40,5 @@ Route::get('/loading',LoadingExample::class);
 Route::get('/calculator',Calculator::class);
 Route::get('/posts',AllPosts::class);
 Route::get('/posts/create',CreatePost::class);
+Route::get('/multistep',MultiStep::class);
 
