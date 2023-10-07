@@ -13,6 +13,8 @@ use App\Livewire\Calculator;
 use App\Livewire\AllPosts;
 use App\Livewire\CreatePost;
 use App\Livewire\MultiStep;
+use App\Livewire\JsComponent;
+use App\Livewire\Transition;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,4 +43,6 @@ Route::get('/calculator',Calculator::class);
 Route::get('/posts',AllPosts::class);
 Route::get('/posts/create',CreatePost::class);
 Route::get('/multistep',MultiStep::class);
+Route::get('/js',JsComponent::class);
+Route::get('/transition',Transition::class);
 
