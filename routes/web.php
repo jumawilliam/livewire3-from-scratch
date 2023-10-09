@@ -16,6 +16,7 @@ use App\Livewire\MultiStep;
 use App\Livewire\JsComponent;
 use App\Livewire\Transition;
 use App\Livewire\DynamicInput;
+use App\Livewire\Patients;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,4 +48,5 @@ Route::get('/multistep',MultiStep::class);
 Route::get('/js',JsComponent::class);
 Route::get('/transition',Transition::class);
 Route::get('/input',DynamicInput::class);
+Route::get('/patients',Patients::class);
 
