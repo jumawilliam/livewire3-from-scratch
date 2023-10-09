@@ -15,6 +15,7 @@ use App\Livewire\CreatePost;
 use App\Livewire\MultiStep;
 use App\Livewire\JsComponent;
 use App\Livewire\Transition;
+use App\Livewire\DynamicInput;
 
 /*
 |--------------------------------------------------------------------------
@@ -45,4 +46,5 @@ Route::get('/posts/create',CreatePost::class);
 Route::get('/multistep',MultiStep::class);
 Route::get('/js',JsComponent::class);
 Route::get('/transition',Transition::class);
+Route::get('/input',DynamicInput::class);
 
