@@ -17,6 +17,7 @@ use App\Livewire\JsComponent;
 use App\Livewire\Transition;
 use App\Livewire\DynamicInput;
 use App\Livewire\Patients;
+use App\Livewire\WireConfirm;
 
 /*
 |--------------------------------------------------------------------------
@@ -49,4 +50,5 @@ Route::get('/js',JsComponent::class);
 Route::get('/transition',Transition::class);
 Route::get('/input',DynamicInput::class);
 Route::get('/patients',Patients::class);
+Route::get('/confirm',WireConfirm::class);
 
