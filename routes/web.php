@@ -19,6 +19,7 @@ use App\Livewire\DynamicInput;
 use App\Livewire\Patients;
 use App\Livewire\WireConfirm;
 use App\Livewire\UserDetails;
+use App\Livewire\SweetAlert;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,4 +54,5 @@ Route::get('/input',DynamicInput::class);
 Route::get('/patients',Patients::class);
 Route::get('/confirm',WireConfirm::class);
 Route::get('/user-details',UserDetails::class);
+Route::get('/sweet-alert',SweetAlert::class);
 
