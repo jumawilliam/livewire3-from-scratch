@@ -20,6 +20,9 @@ use App\Livewire\Patients;
 use App\Livewire\WireConfirm;
 use App\Livewire\UserDetails;
 use App\Livewire\SweetAlert;
+use App\Livewire\ImageUpload;
+use App\Livewire\MultipleUploads;
+use App\Livewire\CostCalculator;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,4 +58,7 @@ Route::get('/patients',Patients::class);
 Route::get('/confirm',WireConfirm::class);
 Route::get('/user-details',UserDetails::class);
 Route::get('/sweet-alert',SweetAlert::class);
+Route::get('/image-upload',ImageUpload::class);
+Route::get('/multiple-uploads',MultipleUploads::class);
+Route::get('/cost-calculator',CostCalculator::class);
 
