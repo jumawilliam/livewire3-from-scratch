@@ -17,7 +17,8 @@ $save=function(){
 }
 
 ?>
-
+<x-layouts.app>
+@volt
 <div class="offset-3 col-6">
     <form wire:submit="save">
         @if(session('success'))
@@ -48,3 +49,5 @@ $save=function(){
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
 </div>
+@endvolt
+</x-layouts.app>

@@ -1,8 +1,16 @@
 <div>
     <h1>Products</h1>
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Create
-      </button>
+    <div class="row">
+        <div class="col">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Create
+              </button>
+        </div>
+        <div class="col">
+            <livewire:product-count :products="$products">
+        </div>
+    </div>
+
       <table class="table">
         <thead>
           <tr>
@@ -36,11 +44,16 @@
       //alert('product created/updated')
       var myModalEl=document.querySelector('#exampleModal')
       var modal=bootstrap.Modal.getOrCreateInstance(myModalEl)
-      
+
       setTimeout(() => {
         modal.hide();
         @this.dispatch('reset-modal');
       }, 5000);
+    })
+
+    var mymodal=document.getElementById('exampleModal')
+    mymodal.addEventListener('hidden.bs.modal',(event)=>{
+        @this.dispatch('reset-modal');
     })
   })
 </script>

@@ -23,7 +23,9 @@ use App\Livewire\SweetAlert;
 use App\Livewire\ImageUpload;
 use App\Livewire\MultipleUploads;
 use App\Livewire\CostCalculator;
-use Livewire\Volt\Volt;
+use App\Livewire\LoanCalculator;
+use App\Livewire\Login;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -62,5 +64,7 @@ Route::get('/sweet-alert',SweetAlert::class);
 Route::get('/image-upload',ImageUpload::class);
 Route::get('/multiple-uploads',MultipleUploads::class);
 Route::get('/cost-calculator',CostCalculator::class);
-Volt::route('volt','volt-sfc');
+Route::get('loan',LoanCalculator::class);
+Route::get('login',Login::class);
+
 
