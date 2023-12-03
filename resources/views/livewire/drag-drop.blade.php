@@ -1,6 +1,6 @@
 <div x-data="dragDrop()">
     <h1>Drag Drop File uploader</h1>
-    <div class="card" x-on:dragover.prevent="dragover" x-on:dragleave,prevent="dragleave" x-on:drop.prevent="drop($event)">
+    <div class="card" x-on:dragover.prevent="dragover" x-on:dragleave.prevent="dragleave" x-on:drop.prevent="drop($event)">
         <div class="card-body">
             <div style="text-align: center">
                 <h4>Drop file here to upload</h4>
