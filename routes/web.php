@@ -25,18 +25,10 @@ use App\Livewire\MultipleUploads;
 use App\Livewire\CostCalculator;
 use App\Livewire\LoanCalculator;
 use App\Livewire\Login;
+use App\Livewire\DragDrop;
 
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -66,5 +58,6 @@ Route::get('/multiple-uploads',MultipleUploads::class);
 Route::get('/cost-calculator',CostCalculator::class);
 Route::get('loan',LoanCalculator::class);
 Route::get('login',Login::class);
+Route::get('drag-drop',DragDrop::class);
 
 
