@@ -26,6 +26,7 @@ use App\Livewire\CostCalculator;
 use App\Livewire\LoanCalculator;
 use App\Livewire\Login;
 use App\Livewire\DragDrop;
+use App\Livewire\ChartComponent;
 
 
 
@@ -59,5 +60,6 @@ Route::get('/cost-calculator',CostCalculator::class);
 Route::get('loan',LoanCalculator::class);
 Route::get('login',Login::class);
 Route::get('drag-drop',DragDrop::class);
+Route::get('chart',ChartComponent::class);
 
 
